@@ -124,7 +124,7 @@ background: #394D61;
         <h1>Success</h1> 
         <p>We received your purchase request;<br/> we'll be in touch shortly!</p> -->
 
-        <form class="form-style-4" action="" method="post">
+        <form class="form-style-4" action="info_su_volo.php" method="post">
 <label for="field1">
 <div class="logo">
                             <img src="images/retina-airport.png" alt="Flight Template">
