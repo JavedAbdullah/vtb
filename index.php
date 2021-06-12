@@ -81,7 +81,7 @@
                             </div>
                             <div class="top_bar_right">
                                 <div class="top_bar_right_wrapper">
-                                    <a href="#" class="button button_theme button_js action_button" target="_blank"><span class="button_label">controlla il tuo volo</span></a>
+                                    <a href="content/airport/controlla_volo.php" class="button button_theme button_js action_button"><span class="button_label">controlla il tuo volo</span></a>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                                             <div class="column_attr clearfix align_center">
                                                 <h2>Perchè scegliere Volare Tutto Bene?</h2>
                                                 <p class="big">
-                                                    Ecco perché gli utenti utilizzano VOLARE TUTTO BENE 
+                                                    Ecco perché gli utenti viaggiano con VOLARE TUTTO BENE 
                                                     
                                         <br> 
                                                 </p>
@@ -180,133 +180,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:0 1%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix" style=" background-image:url('content/airport/images/home_airport_box1.jpg'); background-repeat:no-repeat; background-position:center bottom; padding:60px 20% 45px; max-width: 420px; margin: 0 auto; box-sizing: border-box; border-radius: 2px;">
-                                                <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic1.png">
-                                                    </div>
-                                                </div>
-                                                <hr class="no_line" style="margin:0 auto 180px">
-                                                <h2 style="color:#fff">Nearby
-                                                    <br> flights
-                                                </h2>
-                                                <hr class="no_line" style="margin:0 auto 25px">
-                                                <a class="button button_size_2 button_js" href="content/airport/flights.html" style=" background-color:#fff !important; color:#00164d;"><span class="button_label">See all flighs</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:0 1%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix align_center" style=" background-image:url('content/airport/images/home_airport_box2.jpg'); background-repeat:no-repeat; background-position:center bottom; padding:340px 10% 45px; max-width: 420px; margin: 0 auto; box-sizing: border-box; border-radius: 2px;">
-                                                <a style="text-decoration: none; display: block;" href="#">
-                                                    <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic2.png">
-                                                        </div>
-                                                    </div>
-                                                    <hr class="no_line" style="margin:0 auto 20px">
-                                                    <p class="big" style="color:#fff">
-                                                        London - United States
-                                                    </p>
-                                                    <h2 style="color:#fff">$ 599,00</h2>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:0 1%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix align_center" style=" background-image:url('content/airport/images/home_airport_box3.jpg'); background-repeat:no-repeat; background-position:center bottom; padding:340px 10% 45px; max-width: 420px; margin: 0 auto; box-sizing: border-box; border-radius: 2px;">
-                                                <a style="text-decoration: none; display: block;" href="#">
-                                                    <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic3.png">
-                                                        </div>
-                                                    </div>
-                                                    <hr class="no_line" style="margin:0 auto 20px">
-                                                    <p class="big" style="color:#fff">
-                                                        Paris - Barcelona
-                                                    </p>
-                                                    <h2 style="color:#fff">$ 249,00</h2>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:0 1%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix align_center" style=" background-image:url('content/airport/images/home_airport_box4.jpg'); background-repeat:no-repeat; background-position:center bottom; padding:340px 10% 45px; max-width: 420px; margin: 0 auto; box-sizing: border-box; border-radius: 2px;">
-                                                <a style="text-decoration: none; display: block;" href="#">
-                                                    <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic4.png">
-                                                        </div>
-                                                    </div>
-                                                    <hr class="no_line" style="margin:0 auto 20px">
-                                                    <p class="big" style="color:#fff">
-                                                        Tokyo - Chicago
-                                                    </p>
-                                                    <h2 style="color:#fff">$ 879,00</h2>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section" style="padding-top:80px; padding-bottom:80px; background-color:#edf3f9; background-image:url(content/airport/images/home_airport_sectionbg3.png); background-repeat:no-repeat; background-position:center bottom;">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap three-fourth  valign-top clearfix" style="padding:0 1% 0 0">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix" style=" background-color:#fff; padding:60px 60px 45px; box-shadow: 0px 2px 0px 0px #d9e4ef;">
-                                                <h2 style="padding-bottom: 60px; border-bottom: 1px solid #e2e9f0; margin-bottom: 50px;">Discover Europe in one weekend!</h2>
-                                                <table class="airport_table">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="td1">Warsaw - Barcelona</td>
-                                                            <td class="td2">Outlet: 04-05-2017, 8:04, Terminal B</td>
-                                                            <td class="td3"><a href="#">DETAILS</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="td1">Madrid - Paris</td>
-                                                            <td class="td2">Outlet: 04-05-2017, 14:34, Terminal A</td>
-                                                            <td class="td3"><a href="#">DETAILS</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="td1">Marsille - Berlin</td>
-                                                            <td class="td2">Outlet: 04-05-2017, 15:00, Terminal C</td>
-                                                            <td class="td3"><a href="#">DETAILS</a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-fourth valign-top clearfix" style="padding:0 1%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix" style=" background-color:#0e7ce6; background-image:url('content/airport/images/home_airport_pic5.png'); background-repeat:no-repeat; background-position:center top; padding:50px 20% 40px; max-width: 420px; margin: 0 auto; box-sizing: border-box; border-radius: 2px;">
-                                                <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic6.png">
-                                                    </div>
-                                                </div>
-                                                <hr class="no_line" style="margin:0 auto 20px">
-                                                <h5 style="color:#fff">United States in both directions from</h5>
-                                                <h2 style="color:#fff">$ 500.00</h2>
-                                                <hr class="no_line" style="margin:0 auto 25px">
-                                                <a class="button button_size_2 button_js" href="content/airport/flights.html" style=" background-color:#ff6633 !important; color:#fff"><span class="button_label">See promotions</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                               
+                               
+                                
+                       
                                 <div class="wrap mcb-wrap one valign-top clearfix">
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_divider ">
@@ -314,68 +191,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wrap mcb-wrap two-fifth valign-top clearfix" style="padding:0 2% 0 0">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix">
-                                                <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic7.png">
-                                                    </div>
-                                                </div>
-                                                <hr class="no_line" style="margin:0 auto 40px">
-                                                <h2>We invite you to the largest airport in the United States. We handle over 50,000 people in 4 terminals per day</h2>
-                                                <hr class="no_line" style="margin:0 auto 15px">
-                                                <p class="big">
-                                                    Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap three-fifth valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_image">
-                                            <div class="image_frame image_item scale-with-grid no_border hover-disable">
-                                                <div class="image_wrapper">
-                                                    <a href="https://vimeo.com/119725435" rel="prettyphoto">
-                                                        <div class="mask"></div><img class="scale-with-grid" src="content/airport/images/home_airport_pic8.png">
-                                                    </a>
-                                                    <div class="image_links ">
-                                                        <a href="https://vimeo.com/119725435" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                
+                               
                         </div>
-                        <div class="section mcb-section equal-height-wrap" style="padding-top:120px; padding-bottom:80px;">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one-second valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_image">
-                                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/airport/images/home_airport_pic9.jpg">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-second valign-middle clearfix" style="padding:0 0 0 5%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix">
-                                                <h2>Our airport has many facilities for passengers and tourists</h2>
-                                                <hr class="no_line" style="margin:0 auto 40px">
-                                                <a class="content_link " href="#"><span class="icon"><i class="icon-export"></i></span><span class="title">4 Terminals</span></a><a class="content_link " href="#"><span class="icon"><i class="icon-briefcase"></i></span><span class="title">Luggage area</span></a>
-                                                <a class="content_link " href="#"><span class="icon"><i class="icon-camera"></i></span><span class="title">Monitoring</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
+
                         <div class="section mcb-section" style="padding-top:120px; padding-bottom:80px; background-image:url(content/airport/images/home_airport_sectionbg2.jpg); background-repeat:no-repeat; background-position:center top;">
                             <div class="section_wrapper mcb-section-inner">
                                 <div class="wrap mcb-wrap one valign-top clearfix">

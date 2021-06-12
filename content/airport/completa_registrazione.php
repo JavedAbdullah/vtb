@@ -88,7 +88,6 @@ http://www.tooplate.com/view/2093-flight
                                                 <label for="from" style="color: #458095;">Numero adulti</label>
                                                 <select required name='num_adulti' onchange='this.form()'>
                                                     <option value="">Scegli il numero dei adulti</option>
-                                                    <option value="0">0</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>

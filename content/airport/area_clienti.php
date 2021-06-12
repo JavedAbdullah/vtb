@@ -82,6 +82,7 @@ session_start();
     if($classe_scelta =='Business'){$posto = "ness-2";}else{$posto = "nomy-6";} 
     $num_adulti = $_POST['num_adulti'];
     $num_bambini = $_POST['num_bambini'];
+    $_SESSION["num_biglietti"] = $num_adulti+  $num_bambini ;
     $ora_prenotazione = date('y/m/d h:i:s a', time());
     $num_bagagli = $_POST['num_bagagli'];
 
@@ -206,10 +207,10 @@ http://www.tooplate.com/view/2093-flight
                                  <a href="../../index.php" class="btn btn-success btn-lg"></i>&#127968; ritorna alla Home <br></a>
                                 <br>
                                 <br>
-                                <a href="../../index.php" class="btn btn-success btn-lg"></i>&#127915; biglietto</a>
+                                <a href="biglietto.php" class="btn btn-success btn-lg"></i>&#127915; biglietto</a>
                                 <br>
                                 <br>
-                                <a href="../../index.php" class="btn btn-success btn-lg"></i>&#x2713; effettua check-in online</a>
+                                <a href="check_in.php" class="btn btn-success btn-lg"></i>&#x2713; effettua check-in online</a>
                       
                             </div>
                         </div>
@@ -220,56 +221,65 @@ http://www.tooplate.com/view/2093-flight
             </div>
             
         </div>
-        <table>
-            
-        <thead>
-            <tr>
-                <th>CODE</th>
-                <th>STOCK</th>
-                <th>CAP</th>
-                <th>INCH</th>
-                <th>BOX TYPE</th>
-            </tr>
-            <thead>
-                <tbody>
-                    <tr>
-                        <td>CES-9000</td>
-                        <td>50mt</td>
-                        <td>9mm</td>
-                        <td>1/2"</td>
-                        <td>Kangal / Coil</td>
-                    </tr>
-                    <tr>
-                        <td>CES-9000</td>
-                        <td>50mt</td>
-                        <td>9mm</td>
-                        <td>1/2"</td>
-                        <td>Kangal / Coil</td>
-                    </tr>
-                    <tr>
-                        <td>CES-9000</td>
-                        <td>50mt</td>
-                        <td>9mm</td>
-                        <td>1/2"</td>
-                        <td>Kangal / Coil</td>
-                    </tr>
-                    <tr>
-                        <td>CES-9000</td>
-                        <td>50mt</td>
-                        <td>9mm</td>
-                        <td>1/2"</td>
-                        <td>Kangal / Coil</td>
-                    </tr>
-                </tbody>
-                <table/>
-                <br>
+       
     </section>
 
     
 
 
+<!-- 
+    SELECT prenotazioni.cod_prenotazione, prenotazioni.posto, prenotazioni.num_bagagli, voli.Data_volo, biglietti.classe, biglietti.costo
+FROM prenotazioni,clienti,voli,biglietti
+WHERE prenotazioni.id_cliente  =clienti.id_cliente and clienti.id_cliente = 5  and prenotazioni.cod_volo = voli.cod_volo AND biglietti.cod_prenotazione = prenotazioni.cod_prenotazione -->
+<br>
+<?php
 
+    $id_cliente =  $_SESSION["id_cliente"];
+    $connection = mysqli_connect("localhost","root","","vtb",3326);
+    $query = "SELECT prenotazioni.cod_prenotazione, prenotazioni.posto, prenotazioni.num_bagagli, voli.Data_volo, biglietti.classe, biglietti.costo
+    FROM prenotazioni,clienti,voli,biglietti
+    WHERE prenotazioni.id_cliente  = clienti.id_cliente and clienti.id_cliente =  $id_cliente  and prenotazioni.cod_volo = voli.cod_volo AND biglietti.cod_prenotazione = prenotazioni.cod_prenotazione";
+    $result = mysqli_query($connection,$query);
 
+   
+            
+
+        echo" <table>";
+        echo" <thead>";
+        echo"<tr>";
+        echo" <th>&#127380; codice prenotazione</th>";
+        echo" <th>&#128186; posto</th>";
+        echo"<th>&#129523; numero bagagli</th>";
+        echo"<th>&#128337; data volo</th>";
+        echo"<th>&#128204; classe</th>";
+        echo"<th>&#128176; costo</th>";
+        echo"</tr>";
+        echo" <thead>";
+        echo"<tbody>";
+
+    if(mysqli_num_rows($result)!=0){
+        
+        while($row = mysqli_fetch_array($result)){
+            echo"<tr>";
+            echo" <th><h3>$row[0]</h3></th>";
+            echo" <th><h3>$row[1]</h3></th>";
+            echo" <th><h3>$row[2]</h3></th>";
+            echo" <th><h3>$row[3]</h3></th>";
+            echo" <th><h3>$row[4]</h3></th>";
+            echo" <th><h3>$row[5] €</h3></th>";
+            echo"</tr>";
+            
+        }
+
+        
+    }else{
+        echo "non ci sono prenotazioni";
+    }
+    echo"</tbody>";
+    echo"<table/>";
+    echo"<br>";
+
+?>
 
 
 
