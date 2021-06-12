@@ -6,10 +6,10 @@
   <?php 
     
     
-    $strJsonFileContents = file_get_contents("https://restcountries.eu/rest/v2/all");
-   $array = json_decode($strJsonFileContents, true);
+  //   $strJsonFileContents = file_get_contents("https://restcountries.eu/rest/v2/all");
+  //  $array = json_decode($strJsonFileContents, true);
 
-   $connection = mysqli_connect("localhost","root","","vtb",3326);
+   //$connection = mysqli_connect("localhost","root","","vtb",3326);
   
 
 
@@ -34,6 +34,28 @@
 //    }
        
 //    }
+
+$connection = mysqli_connect("localhost","root","","vtb",3326);
+                    $query = "SELECT * FROM city";
+                    $result = mysqli_query($connection,$query);
+                    //<img src='$src_flag ' alt='Girl in a jacket' width='20' height='17'>
+
+                    $immagine_partenza = "";
+                    $immagine_arrivo = "";
+
+                    if(mysqli_num_rows($result)!=0){
+    
+                    while($row = mysqli_fetch_array($result)){
+                        if($row[2] =='AM'){
+                            $immagine_partenza = $row[1];
+                    }elseif($row[2] =='AZ'){
+                        $immagine_arrivo = $row[1];
+                    }
+                    }
+                }
+
+                echo "$immagine_partenza";
+                echo"<img src='$immagine_partenza'  width='20' height='17'>";
 
 
        ?> 

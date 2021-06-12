@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 ?>
+<?php ob_start(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -226,6 +228,7 @@ http://www.tooplate.com/view/2093-flight
                 <div class="col-md-12">
                     <div class="section-heading">
                         <h2>i Voli disponibili</h2>
+                        <br>
 
                     </div>
 
@@ -275,6 +278,9 @@ http://www.tooplate.com/view/2093-flight
                 //session_start();
                     $immagini_offerte = ["https://s22.postimg.cc/8mv5gn7w1/paper-plane.png","https://s28.postimg.cc/ju5bnc3x9/plane.png","https://s21.postimg.cc/tpm0cge4n/space-ship.png"];
                     $tipi_offerte = ["Economy","Economy FC","Business"];
+                    $_SESSION["Economy"] = "Economy";
+                    $_SESSION["EconomyFC"] = "Economy FC";
+                    $_SESSION["Business"] = "Business";
                     $cod_aereo = [3,32,321];
 
                     
@@ -297,6 +303,30 @@ http://www.tooplate.com/view/2093-flight
                         $prezzi[1] = $prezzo_massimo - 140;
                         $prezzi[2] = $prezzo_massimo - 43;
                     }
+                    $_SESSION["prezzo0"] =  $prezzi[0];
+                    $_SESSION["prezzo1"] =  $prezzi[1];
+                    $_SESSION["prezzo2"] =  $prezzi[2];
+
+
+                    $connection = mysqli_connect("localhost","root","","vtb",3326);
+                    $query = "SELECT * FROM city";
+                    $result = mysqli_query($connection,$query);
+                    //<img src='$src_flag ' alt='Girl in a jacket' width='20' height='17'>
+
+                //     $immagine_partenza = "";
+                //     $immagine_arrivo = "";
+
+                //     if(mysqli_num_rows($result)!=0){
+    
+                //     while($row = mysqli_fetch_array($result)){
+                //         if($row[2] =="$citta_partenza"){
+                //             $immagine_partenza = $row[1];
+                //     }elseif($row[2] =="$citta_arrivo"){
+                //         $immagine_arrivo = $row[1];
+                //     }
+                //     }
+                // }
+               
 
                     echo"<div class='container'>";
                     echo"<div class='panel pricing-table'>";
@@ -308,25 +338,29 @@ http://www.tooplate.com/view/2093-flight
         
           
           <div class='pricing-plan'>
+          
             <img src='$immagini_offerte[$i]' alt='' class='pricing-img'>
             <h2 class='pricing-header'>$tipi_offerte[$i]</h2>
             <ul class='pricing-features'>
-              <li class='pricing-features-item'><b>Citt&agrave partenza:</b> $citta_partenza [bandiera]</li>
-              <li class='pricing-features-item'><b>Citt&agrave arrivo:</b> $citta_arrivo [bandiera]</li>
+              <li class='pricing-features-item'><b>Citt&agrave partenza:</b> $citta_partenza</li>
+              <li class='pricing-features-item'><b>Citt&agrave arrivo:</b> $citta_arrivo</li>
               <li class='pricing-features-item'><b>Data partenza:</b> $data_partenza</li>
               <li class='pricing-features-item'><b>Data ritorno:</b> $data_ritorno</li>
               <li class='pricing-features-item'><b>Lunghezza spazio aereo:</b> 78km</li>
               <li class='pricing-features-item'><b>Codice aereo:</b>$cod_aereo[$i]</li>
             </ul>
             <span class='pricing-price'>€$prezzi[$i]</span>
-            <a href='#/' class='pricing-button is-featured'>Prenota</a>
+            <form action='login.php' method='post'>
+            <button class='pricing-button is-featured' name='$prezzi[$i]' id='$prezzi[$i]'>Prenota</button>
+            </form>
           </div>
        
      "; }
      echo "</div>";
+
+
+    
      ?>
-
-
 
                     <details>
                         <summary class="pricing-button is-featured'">cosa cambia tra le varie scelte?</summary>

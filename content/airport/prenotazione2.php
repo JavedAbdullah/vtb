@@ -127,7 +127,7 @@ http://www.tooplate.com/view/2093-flight
                                                 }
 
                                                  
-    
+                                                mysqli_close($connection);
                                                 ?> 
 
 
@@ -168,6 +168,8 @@ http://www.tooplate.com/view/2093-flight
                                                     }
                                                     }
                                                     }
+
+                                    
 
                                                     ?>
 
