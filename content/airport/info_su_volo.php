@@ -222,7 +222,7 @@ $connection = mysqli_connect("localhost","root","","vtb",3326);
 
         
     }else{
-        echo "non ci sono prenotazioni";
+        echo "non ci sono prenotazioni con questo codice";
     }
     echo"</tbody>";
     echo"<table/>";

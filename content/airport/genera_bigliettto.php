@@ -180,7 +180,7 @@ h2{
 $cod_prenotazione = $_POST['biglietto'];
 
 $id_cliente =  $_SESSION["id_cliente"];
-$num_persone = $_SESSION["num_biglietti"];
+//$num_persone = $_SESSION["num_biglietti"];
 
 $connection = mysqli_connect("localhost","root","","vtb",3326);
     $query = "SELECT biglietti.numero, biglietti.costo,biglietti.classe,prenotazioni.posto FROM biglietti,prenotazioni,clienti WHERE prenotazioni.id_cliente = clienti.id_cliente AND biglietti.cod_prenotazione = prenotazioni.cod_prenotazione and prenotazioni.cod_prenotazione = $cod_prenotazione  and clienti.id_cliente = $id_cliente limit 1";
@@ -196,7 +196,7 @@ $connection = mysqli_connect("localhost","root","","vtb",3326);
         echo"<th>&#128176; costo</th>";
         echo"<th>&#128204; classe</th>"; 
         echo" <th>&#128186; posto</th>";
-        echo"<th>&#128101; per numero di persone</th>";
+       // echo"<th>&#128101; per numero di persone</th>";
         echo"</tr>";
         echo" <thead>";
         echo"<tbody>";
@@ -209,7 +209,7 @@ $connection = mysqli_connect("localhost","root","","vtb",3326);
             echo" <th><h3>$row[1] €</h3></th>";
             echo" <th><h3>$row[2]</h3></th>";
             echo" <th><h3>$row[3]</h3></th>";
-            echo" <th><h3>$num_persone</h3></th>";
+            //echo" <th><h3>$num_persone</h3></th>";
             echo"</tr>";
             
         }
