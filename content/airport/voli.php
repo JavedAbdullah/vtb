@@ -9,6 +9,8 @@ session_start();
 
 <head>
     <meta charset="utf-8">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!--
 

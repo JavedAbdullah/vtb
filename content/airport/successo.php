@@ -4,6 +4,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   </head>
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/favicon.ico">
     <style>
       body {
         text-align: center;

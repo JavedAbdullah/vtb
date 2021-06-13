@@ -68,12 +68,7 @@
                                             <li>
                                                 <a href="content/airport/press.html"><span>Press</span></a>
                                             </li> -->
-                                            <li>
-                                                <a href="content/airport/airplanes.html"><span>I nostri aerei</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="content/airport/contact.html"><span>Contatti</span></a>
-                                            </li>
+                                           
                                         </ul>
                                     </nav>
                                     <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -196,119 +191,6 @@
                         </div>
                         
 
-                        <div class="section mcb-section" style="padding-top:120px; padding-bottom:80px; background-image:url(content/airport/images/home_airport_sectionbg2.jpg); background-repeat:no-repeat; background-position:center top;">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix align_center">
-                                                <h2 style="color:#fff">Check the news</h2>
-                                                <p class="big" style="color: #8ac0f4;">
-                                                    Keep up with news, promotions and news
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one column_divider">
-                                            <hr class="no_line" style="margin:0 auto 30px">
-                                        </div>
-                                        <div class="column mcb-column one column_blog_slider">
-                                            <div class="blog_slider clearfix  flat" data-count="5">
-                                                <div class="blog_slider_header"></div>
-                                                <ul class="blog_slider_ul">
-                                                    <li>
-                                                        <div class="item_wrapper">
-                                                            <div class="image_frame scale-with-grid">
-                                                                <div class="image_wrapper">
-                                                                    <a href="content/airport/post_item.html"><img src="content/airport/images/home_airport_post1.jpg" class="scale-with-grid wp-post-image">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="date_label">
-                                                                October 24, 2017
-                                                            </div>
-                                                            <div class="desc">
-                                                                <h4><a href="content/airport/post_item.html">Quisque cursus et porttitor risus lobortis quis</a></h4>
-                                                                <hr class="hr_color">
-
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item_wrapper">
-                                                            <div class="image_frame scale-with-grid">
-                                                                <div class="image_wrapper">
-                                                                    <a href="content/airport/post_item.html"><img src="content/airport/images/home_airport_post2.jpg" class="scale-with-grid wp-post-image">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="date_label">
-                                                                October 24, 2017
-                                                            </div>
-                                                            <div class="desc">
-                                                                <h4><a href="content/airport/post_item.html">Nulla ipsum dolor lacus</a></h4>
-                                                                <hr class="hr_color">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item_wrapper">
-                                                            <div class="image_frame scale-with-grid">
-                                                                <div class="image_wrapper">
-                                                                    <a href="content/airport/post_item.html"><img src="content/airport/images/home_airport_post3.jpg" class="scale-with-grid wp-post-image">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="date_label">
-                                                                October 24, 2017
-                                                            </div>
-                                                            <div class="desc">
-                                                                <h4><a href="content/airport/post_item.html">Quisque lorem tortor fringilla sed</a></h4>
-                                                                <hr class="hr_color">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item_wrapper">
-                                                            <div class="image_frame scale-with-grid">
-                                                                <div class="image_wrapper">
-                                                                    <a href="content/airport/post_item.html"><img src="content/airport/images/home_airport_post4.jpg" class="scale-with-grid wp-post-image">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="date_label">
-                                                                October 24, 2017
-                                                            </div>
-                                                            <div class="desc">
-                                                                <h4><a href="content/airport/post_item.html">Nulla imperdiet sit amet magna</a></h4>
-                                                                <hr class="hr_color">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="item_wrapper">
-                                                            <div class="image_frame scale-with-grid">
-                                                                <div class="image_wrapper">
-                                                                    <a href="content/airport/post_item.html"><img src="content/airport/images/home_airport_post1.jpg" class="scale-with-grid wp-post-image">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="date_label">
-                                                                October 24, 2017
-                                                            </div>
-                                                            <div class="desc">
-                                                                <h4><a href="content/airport/post_item.html">Lorem ipsum dolor sit amet enim</a></h4>
-                                                                <hr class="hr_color">
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="slider_pager slider_pagination"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -319,45 +201,11 @@
                 <div class="container">
 
 
-                    <div class="column one-third">
-                        <aside class="widget_text widget widget_custom_html">
-                            <h4>Nullam wisi ultricies vitae</h4>
-                            <div class="textwidget custom-html-widget">
-                                <hr class="no_line" style="margin:0 auto 30px">
-                                <div class="column one-second">
-                                    <ul>
-                                        <li style="margin-bottom:10px">
-                                            <span style="color:#ff6633;margin-right:10px">→</span><a href="#">Aenean solli</a>
-                                        </li>
-                                        <li style="margin-bottom:10px">
-                                            <span style="color:#ff6633;margin-right:10px">→</span><a href="#">Duis sed odio sit</a>
-                                        </li>
-                                        <li style="margin-bottom:10px">
-                                            <span style="color:#ff6633;margin-right:10px">→</span><a href="#">Class aptent</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="column one-second">
-                                    <ul>
-                                        <li style="margin-bottom:10px">
-                                            <span style="color:#ff6633;margin-right:10px">→</span><a href="#">Duis sed odio </a>
-                                        </li>
-                                        <li style="margin-bottom:10px">
-                                            <span style="color:#ff6633;margin-right:10px">→</span><a href="#">Morbi accum </a>
-                                        </li>
-                                        <li style="margin-bottom:10px">
-                                            <span style="color:#ff6633;margin-right:10px">→</span><a href="#">Nam nec </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-
+                    
 
                     <div class="column one-third">
                         <aside class="widget_text widget widget_custom_html">
-                            <h4>Find us in social media</h4>
+                            <h4>trovaci sui  social media</h4>
                             <div class="textwidget custom-html-widget">
                                 <hr class="no_line" style="margin:0 auto 30px">
                                 <a href="#" class="icon_bar  icon_bar_facebook icon_bar_big"><span class="t"><i class="icon-facebook"></i></span><span class="b"><i class="icon-facebook"></i></span></a>
@@ -370,11 +218,11 @@
                     <div class="column one-third">
                         <aside class="widget_text widget widget_custom_html">
                             <div class="textwidget custom-html-widget">
-                                <h5 style="background: url(content/airport/images/home_airport_pic10.png) no-repeat right center; padding-right: 80px; text-align: right;">Do you have questions?
-                                    <br> Contact us now</h5>
+                                <h5 style="background: url(content/airport/images/home_airport_pic10.png) no-repeat right center; padding-right: 80px; text-align: right;">hai domande?
+                                    <br> contattacci ora</h5>
                                 <div style="width: 185px; height: 2px; background: #cfdae5; float: right;"></div>
                                 <hr class="no_line" style="margin:0 auto 20px">
-                                <h2 style="text-align: right; color: #00164d;"><span style="font-size: 16px; ">+61 (0) </span> 383 766 284</h2>
+                                <h2 style="text-align: right; color: #00164d;"><span style="font-size: 16px; ">+39 (0) </span> 382 726 984</h2>
                             </div>
                         </aside>
                     </div>

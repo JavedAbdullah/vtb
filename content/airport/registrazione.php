@@ -7,6 +7,8 @@ session_start();
 <html lang="en">
 <head>
 	<title>registrazione</title>
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	

@@ -79,13 +79,13 @@ http://www.tooplate.com/view/2093-flight
                             <!-- <h4>Choose Your Direction:</h4> -->
                             <ul class="social-links">
                                 <li><a href="../../index.php">Ritorna alla home </i></a></li>
-                                <li><a href="airplanes.html">i nostri aerei </i></a></li>
+                                <!-- <li><a href="#">i nostri aerei </i></a></li> -->
 
 
                             </ul>
                         </div>
                         <div class="page-direction-button" style=" color:#00164d;">
-                            <a href="contact.html"><i class="fa fa-phone"></i>Contattaci ora</a>
+                            <a href="#"><i class="fa fa-phone"></i>Contattaci ora</a>
                         </div>
                     </div>
                 </div>
@@ -309,7 +309,7 @@ http://www.tooplate.com/view/2093-flight
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h2>Most Visited Places</h2>
+                    <h2>i Posti pi&Uacute; visitati</h2>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -318,7 +318,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-01.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>River Views</h4>
+                                    <!-- <h4>River Views</h4> -->
                                     <span>New York</span>
                                 </div>
                             </div>
@@ -327,7 +327,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-02.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Lorem ipsum dolor</h4>
+                                    <!-- <h4>Lorem ipsum dolor</h4> -->
                                     <span>Tokyo</span>
                                 </div>
                             </div>
@@ -336,8 +336,8 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-03.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Proin dignissim</h4>
-                                    <span>Paris</span>
+                                    <!-- <h4>Proin dignissim</h4> -->
+                                    <span>Prigi</span>
                                 </div>
                             </div>
                         </div>
@@ -345,7 +345,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-04.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Fusce sed ipsum</h4>
+                                    <!-- <h4>Fusce sed ipsum</h4> -->
                                     <span>Hollywood</span>
                                 </div>
                             </div>
@@ -354,7 +354,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-02.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Vivamus egestas</h4>
+                                    <!-- <h4>Vivamus egestas</h4> -->
                                     <span>Tokyo</span>
                                 </div>
                             </div>
@@ -363,7 +363,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-01.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Aliquam elit metus</h4>
+                                    <!-- <h4>Aliquam elit metus</h4> -->
                                     <span>New York</span>
                                 </div>
                             </div>
@@ -372,7 +372,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-03.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Phasellus pharetra</h4>
+                                    <!-- <h4>Phasellus pharetra</h4> -->
                                     <span>Paris</span>
                                 </div>
                             </div>
@@ -381,7 +381,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-04.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>In in quam efficitur</h4>
+                                    <!-- <h4>In in quam efficitur</h4> -->
                                     <span>Hollywood</span>
                                 </div>
                             </div>
@@ -390,7 +390,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-01.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Sed faucibus odio</h4>
+                                    <!-- <h4>Sed faucibus odio</h4> -->
                                     <span>NEW YORK</span>
                                 </div>
                             </div>
@@ -399,7 +399,7 @@ http://www.tooplate.com/view/2093-flight
                             <div class="visited-item">
                                 <img src="img/place-02.jpg" alt="">
                                 <div class="text-content">
-                                    <h4>Donec varius porttitor</h4>
+                                    <!-- <h4>Donec varius porttitor</h4> -->
                                     <span>Tokyo</span>
                                 </div>
                             </div>
