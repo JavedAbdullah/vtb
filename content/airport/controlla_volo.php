@@ -131,7 +131,7 @@ background: #394D61;
                         </div>
                         <br>
 <span>inserire un codice di prenotazione</span>
-<input type="text" placeholder="inseire codice di prenotazione">
+<input type="text" placeholder="inseire codice di prenotazione" name="volo" id="volo">
 
 
 
@@ -141,7 +141,7 @@ background: #394D61;
 </label>
 
 <label>
-<span> </span><input type="submit" value="controlla volo" class="btn btn-success btn-lg" name="volo" id="volo"/>
+<span> </span><input type="submit" value="controlla volo" class="btn btn-success btn-lg" />
 </label>
 </form>
 

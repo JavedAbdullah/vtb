@@ -1,3 +1,29 @@
+<?php
+session_start();
+?>
+
+<?php
+        $prezzo0 = $_SESSION["prezzo0"];
+        $prezzo1 = $_SESSION["prezzo1"];
+        $prezzo2 = $_SESSION["prezzo2"];
+        $prezzo_scelto = 0;
+		$classe_scelta = "";
+        if(isset($_POST[$prezzo0])){
+            $prezzo_scelto = $prezzo0;
+			$classe_scelta = "Economy";
+        }elseif(isset($_POST[$prezzo1])){
+            $prezzo_scelto = $prezzo1;
+			$classe_scelta = "EconomyFC";
+        }elseif(isset($_POST[$prezzo2])){
+            $prezzo_scelto = $prezzo2;
+			$classe_scelta = "Business";
+        }
+       // echo "hai scelto il prezzo ".$prezzo_scelto." euro";
+        $_SESSION["prezzo_scelto"]= $prezzo_scelto;
+		$_SESSION["classe_scelta"]= $classe_scelta ;
+
+    
+    ?>
 
 <!DOCTYPE html>
 <html>

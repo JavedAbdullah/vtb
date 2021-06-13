@@ -25,7 +25,7 @@
 body{
     font-family: Helvetica;
     -webkit-font-smoothing: antialiased;
-    background: rgba( 71, 147, 227, 1);
+    background: #458095;
 }
 h2{
     text-align: center;
@@ -153,7 +153,7 @@ h2{
 
 <div class="container">
     <center>
-      <div class="card">
+      <!-- <div class="card"> -->
       <!-- <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div>
@@ -165,11 +165,11 @@ h2{
             <div class="logo">
                             <img src="images/retina-airport.png" alt="Flight Template">
                         </div>
-        </div>
+        <!-- </div> -->
         </center>
+<br>
 
-
-<center><h1> volo con VTB</h1></center>
+<center><h1 style="color: #E6E4E4;"> informazioni sul volo</h1></center>
 
 <div class="table-wrapper">
 <?php
@@ -180,7 +180,7 @@ $cod_prenotazione = $_POST['volo'];
 $connection = mysqli_connect("localhost","root","","vtb",3326);
     $query = "SELECT biglietti.numero, prenotazioni.posto, prenotazioni.num_adulti, prenotazioni.num_bambini,prenotazioni.chek_in, biglietti.costo, biglietti.classe
     FROM prenotazioni,biglietti
-    WHERE prenotazioni.cod_prenotazione = biglietti.cod_prenotazione AND prenotazioni.cod_prenotazione=7 LIMIT 1";
+    WHERE prenotazioni.cod_prenotazione = biglietti.cod_prenotazione AND prenotazioni.cod_prenotazione=$cod_prenotazione LIMIT 1";
     $result = mysqli_query($connection,$query);
 
    
@@ -201,6 +201,7 @@ $connection = mysqli_connect("localhost","root","","vtb",3326);
         echo"</tr>";
         echo" <thead>";
         echo"<tbody>";
+        //echo "$cod_prenotazione";
 
     if(mysqli_num_rows($result)!=0){
         
@@ -228,7 +229,7 @@ $connection = mysqli_connect("localhost","root","","vtb",3326);
     echo"<br>";
 
 ?>
-<a href="area_clienti.php" class="btn btn-success"> ritona alla home</a>
+<a href="../../index.php" class="btn btn-success"> ritona alla home</a>
   <!-- <details>
                         <summary class="btn btn-success">hai ordinato per molte persone ma hai un solo biglitto?</summary>
                         <p> al <b>numero dei posti </b> va aggiunto +1( esempio. nomy-2 diventa nomy-3, nomy-4 ecc..)</p>

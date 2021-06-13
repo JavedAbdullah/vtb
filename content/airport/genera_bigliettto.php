@@ -28,7 +28,7 @@ session_start();
 body{
     font-family: Helvetica;
     -webkit-font-smoothing: antialiased;
-    background: rgba( 71, 147, 227, 1);
+    background: #458095;
 }
 h2{
     text-align: center;
@@ -156,7 +156,7 @@ h2{
 
 <div class="container">
     <center>
-      <div class="card">
+      
       <!-- <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div>
@@ -168,11 +168,11 @@ h2{
             <div class="logo">
                             <img src="images/retina-airport.png" alt="Flight Template">
                         </div>
-        </div>
+       
         </center>
 
-
-<center><h1> biglietto di VTB</h1></center>
+<br>
+<center><h1 style="color: #E6E4E4;">ecco il tuo biglietto</h1></center>
 
 <div class="table-wrapper">
 <?php

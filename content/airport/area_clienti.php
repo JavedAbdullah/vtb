@@ -78,8 +78,11 @@ session_start();
     $id_cliente =  $_SESSION["id_cliente"];
     //$cod_volo
     $classe_scelta = $_SESSION["classe_scelta"];
+  
     $posto = "";
-    if($classe_scelta =='Business'){$posto = "ness-2";}else{$posto = "nomy-6";} 
+    $random_num = rand(1, 10);
+
+    if($classe_scelta =='Business'){$posto = "ness-".$random_num;}else{$posto = "nomy-".$random_num;} 
     $num_adulti = $_POST['num_adulti'];
     $num_bambini = $_POST['num_bambini'];
     $_SESSION["num_biglietti"] = $num_adulti+  $num_bambini ;
@@ -95,6 +98,7 @@ session_start();
         $numero = auto_incremement_biglietto_ID();
         //$cod_prenotazione
         $costo = $_SESSION["prezzo_scelto"];
+        
         $costo_bagagli = 0;
         $cost_bambini  = 0;
         $cost_adulti = 0;

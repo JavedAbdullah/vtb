@@ -350,7 +350,7 @@ http://www.tooplate.com/view/2093-flight
               <li class='pricing-features-item'><b>Codice aereo:</b>$cod_aereo[$i]</li>
             </ul>
             <span class='pricing-price'>€$prezzi[$i]</span>
-            <form action='login.php' method='post'>
+            <form action='completa_registrazione.php' method='post'>
             <button class='pricing-button is-featured' name='$prezzi[$i]' id='$prezzi[$i]'>Prenota</button>
             </form>
           </div>

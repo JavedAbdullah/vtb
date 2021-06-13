@@ -33,7 +33,7 @@ session_start();
 				$id_cliente =$row[0];
 			}
 			$_SESSION["id_cliente"]= $id_cliente;
-			header("Location: completa_registrazione.php");
+			header("Location: prenotazione2.php");
 		}
 
 		

@@ -1,28 +1,53 @@
 <?php
 session_start();
 ?>
+<!-- dati provenienti dopo la registrazione -->
+	
 <?php
-        $prezzo0 = $_SESSION["prezzo0"];
-        $prezzo1 = $_SESSION["prezzo1"];
-        $prezzo2 = $_SESSION["prezzo2"];
-        $prezzo_scelto = 0;
-		$classe_scelta = "";
-        if(isset($_POST[$prezzo0])){
-            $prezzo_scelto = $prezzo0;
-			$classe_scelta = $_SESSION["Economy"];
-        }elseif(isset($_POST[$prezzo1])){
-            $prezzo_scelto = $prezzo1;
-			$classe_scelta = $_SESSION["EconomyFC"];
-        }elseif(isset($_POST[$prezzo2])){
-            $prezzo_scelto = $prezzo2;
-			$classe_scelta = $_SESSION["Business"];
-        }
-       // echo "hai scelto il prezzo ".$prezzo_scelto." euro";
-        $_SESSION["prezzo_scelto"]= $prezzo_scelto;
-		$_SESSION["classe_scelta"]= $classe_scelta ;
 
+function auto_incremement_ID() {
+    $connection = mysqli_connect("localhost","root","","vtb",3326);
+    $query = "SELECT id_cliente FROM clienti";
+    $result = mysqli_query($connection,$query);
+    $ultimo_id = 0;
+    if(mysqli_num_rows($result)!=0){
     
+        while($row = mysqli_fetch_array($result)){
+            $ultimo_id =$row[0];
+        }
+    }
+
+    return $ultimo_id + 1;
+}
+
+
+
+    if(isset($_POST["passaporto"])  && isset($_POST["nome"]) && isset($_POST["cognome"])    && isset($_POST["tel"]) && isset($_POST["username"]) && isset($_POST["pass"]) && isset($_POST["data_nascita"]) && isset($_POST["green_pass"]) && isset($_POST["email"]) && isset($_POST["carta_credito"])   ){
+        $passaporto = $_POST["passaporto"];
+        $nome = $_POST["nome"];
+        $cognome = $_POST["cognome"];
+        $tel = $_POST["tel"];
+        $username = $_POST["username"];
+        $passwd = $_POST["pass"];
+        $data_nascita = $_POST["data_nascita"];
+        $green_pass = $_POST["green_pass"];
+        $email = $_POST["email"];
+        $carta_credito = $_POST["carta_credito"];
+
+        $id_cliente = auto_incremement_ID();
+
+        $connection = mysqli_connect("localhost","root","","vtb",3326);
+        $query = "INSERT INTO `clienti`( `id_cliente`,`passaporto`, `cognome`, `nome`, `tel`, `green_pass`, `data_nascita`, `username`, `passwd`, `email`, `num_carta`) VALUES ($id_cliente,'$passaporto','$cognome','$nome','$tel','$green_pass','$data_nascita','$username','$passwd','$email','$carta_credito')";
+        $result = mysqli_query($connection,$query);
+		
+
+    }
+      
     ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,49 +152,6 @@ session_start();
 	</div>
 
 
-<!-- dati provenienti dopo la registrazione -->
-	
-    <?php
-
-function auto_incremement_ID() {
-    $connection = mysqli_connect("localhost","root","","vtb",3326);
-    $query = "SELECT id_cliente FROM clienti";
-    $result = mysqli_query($connection,$query);
-    $ultimo_id = 0;
-    if(mysqli_num_rows($result)!=0){
-    
-        while($row = mysqli_fetch_array($result)){
-            $ultimo_id =$row[0];
-        }
-    }
-
-    return $ultimo_id + 1;
-}
-
-
-
-    if(isset($_POST["passaporto"])  && isset($_POST["nome"]) && isset($_POST["cognome"])    && isset($_POST["tel"]) && isset($_POST["username"]) && isset($_POST["pass"]) && isset($_POST["data_nascita"]) && isset($_POST["green_pass"]) && isset($_POST["email"]) && isset($_POST["carta_credito"])   ){
-        $passaporto = $_POST["passaporto"];
-        $nome = $_POST["nome"];
-        $cognome = $_POST["cognome"];
-        $tel = $_POST["tel"];
-        $username = $_POST["username"];
-        $passwd = $_POST["pass"];
-        $data_nascita = $_POST["data_nascita"];
-        $green_pass = $_POST["green_pass"];
-        $email = $_POST["email"];
-        $carta_credito = $_POST["carta_credito"];
-
-        $id_cliente = auto_incremement_ID();
-
-        $connection = mysqli_connect("localhost","root","","vtb",3326);
-        $query = "INSERT INTO `clienti`( `id_cliente`,`passaporto`, `cognome`, `nome`, `tel`, `green_pass`, `data_nascita`, `username`, `passwd`, `email`, `num_carta`) VALUES ($id_cliente,'$passaporto','$cognome','$nome','$tel','$green_pass','$data_nascita','$username','$passwd','$email','$carta_credito')";
-        $result = mysqli_query($connection,$query);
-		
-
-    }
-      
-    ?>
 			<!-- controllo sul login -->
 		
 	
